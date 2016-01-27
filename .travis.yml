@@ -1,0 +1,27 @@
+sudo: false
+
+cache:
+  directories:
+    - $HOME/.ivy2/cache
+    - $HOME/.sbt/boot/
+    - $HOME/.haxelib-local/
+
+before_cache:
+  - find $HOME/.sbt -name '*.lock' | xargs rm
+  - find $HOME/.ivy2 -name 'ivydata-*.properties' | xargs rm
+
+language: scala
+
+scala:
+  - 2.11.7
+
+before_deploy:
+  - git clone --depth=1 $secret_git ./secret
+  - bash ./secret/before_deploy.sh
+
+deploy:
+  provider: script
+  script: ./deploy.sh
+  on:
+    condition: -e ./deploy.sh
+    all_branches: true
