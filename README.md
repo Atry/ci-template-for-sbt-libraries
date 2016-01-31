@@ -56,8 +56,8 @@ On Travis CI's settings page, set environment variable `secret_git` pointing to 
 
 ### Step 5:
 
-Rename `deploy.sh.disable` to `deploy.sh`
+Rename `deploy.sh.disable` to `deploy.sh`.
 
 ### Step 6:
 
-Push changes
+Push changes.
