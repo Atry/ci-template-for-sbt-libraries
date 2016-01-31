@@ -28,9 +28,9 @@ credentials += Credentials("Sonatype Nexus Repository Manager", "oss.sonatype.or
 A Sbt configuration file that contains your username and password for Haxelib.
   
 ``` sbt
-haxelibSubmitUsername := "Atry"
+haxelibSubmitUsername := "your-username"
 
-haxelibSubmitPassword := "********"
+haxelibSubmitPassword := "your-password"
 ```
 
 ### Step 2:
