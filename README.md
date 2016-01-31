@@ -49,6 +49,15 @@ git pull https://github.com/Atry/ci-template-for-sbt-libraries.git haxe
 
 Merge conflicts.
 
+
 ### Step 4:
 
+On Travis CI's settings page, set environment variable `secret_git` pointing to your Gist or your private GIT repository.
+
+### Step 5:
+
 Rename `deploy.sh.disable` to `deploy.sh`
+
+### Step 6:
+
+Push changes
