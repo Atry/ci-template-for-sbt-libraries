@@ -6,7 +6,7 @@ This is a template for easy setup CI
 
 ### Step 1:
 
-Create a secret [gist](https://gist.github.com/) or other private GIT repository and put the following file into it:
+Create a secret [gist](https://gist.github.com/) or another private GIT repository and put the following file into it:
 
 #### `id_rsa`
 
