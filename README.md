@@ -12,28 +12,27 @@ Create a secret [gist](https://gist.github.com/) or other private GIT repository
 * `secring.asc` - Your PGP private key used to sign your artifacts that will be pushed to Nexus
 * `sonatype.sbt` - A Sbt configuration file that contains your username and password for Nexus.
   
-  ```
+  ``` sbt
 credentials += Credentials("Sonatype Nexus Repository Manager", "oss.sonatype.org", "your-username", "your-password")
 ```
 * `haxelib.sbt` - A Sbt configuration file that contains your username and password for Haxelib.
   
-  ```
+  ``` sbt
 haxelibSubmitUsername := "Atry"
 
 haxelibSubmitPassword := "********"
-Raw
 ```
 
 
 ### Step 2:
 
-```
+``` bash
 git pull https://github.com/Atry/ci-template-for-sbt-libraries.git ci
 ```
 
 or 
 
-```
+``` bash
 git pull https://github.com/Atry/ci-template-for-sbt-libraries.git haxe
 ```
 
